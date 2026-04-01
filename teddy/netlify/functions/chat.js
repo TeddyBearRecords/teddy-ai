@@ -42,7 +42,7 @@ exports.handler = async (event) => {
     let model;
     try {
       model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-1.5-pro",
         systemInstruction: system || DEFAULT_SYSTEM,
       });
     } catch {
