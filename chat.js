@@ -57,7 +57,7 @@ exports.handler = async (event) => {
 
     // On initialise le modèle (Gemini 1.5 Pro) avec la personnalité de TEDDY
     const model = genAI.getGenerativeModel({ 
-      model: "gemini-1.5-pro-latest",
+      model: "gemini-1.5-pro",
       systemInstruction: system || SYSTEM 
     });
 
